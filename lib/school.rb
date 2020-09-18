@@ -8,10 +8,10 @@ class School
   end 
   
   def add_student(student, level)
-    if @roster[level].include? level 
+    if @roster[level] 
       @roster[level] << student
     else
-      #@roster[level] = []
+      @roster[level] = []
       @roster[level] << student 
   end
   end
