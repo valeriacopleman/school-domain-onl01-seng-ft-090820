@@ -9,9 +9,11 @@ class School
   end 
   
   def add_student(student, grade)
-  
-   @roster[grade]= []
-   @roster[grade] << name 
+    if @roster[grade]
+    @roster[grade]= << student
+    else 
+    @roster[] << student 
+  end
   end
   
   def grade=(grade)
