@@ -16,4 +16,7 @@ class School
   end
   end
   
+  def grade(level)
+    level.values 
+  end
 end
