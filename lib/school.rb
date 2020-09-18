@@ -1,6 +1,6 @@
 class School
   
-  attr_accessor :roster, :name, :student
+  attr_accessor :roster, :name
   
   def initialize(name)
     @name = name
@@ -17,6 +17,10 @@ class School
   end
   
   def grade(level)
-    level.values 
+    @roster.collect do |keys, values|
+      if keys== |level|
+        retun values
+      end
+    end
   end
 end
