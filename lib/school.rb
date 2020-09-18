@@ -3,6 +3,8 @@ class School
   def initialize(name)
     @name = name
   end
+  
+  BRANDS = []
     
   def roster
     @roster = {}
