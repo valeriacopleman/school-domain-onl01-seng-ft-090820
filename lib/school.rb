@@ -13,8 +13,9 @@ class School
   def add_student(student, grade)
     if @roster[grade]
     @roster[grade] << student
-    else 
-    @roster[] << student 
+    else
+      @roster[grade] = []
+      @roster[grade] << student 
   end
   end
   
