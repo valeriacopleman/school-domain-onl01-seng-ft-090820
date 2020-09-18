@@ -18,7 +18,7 @@ class School
   
   def grade(level)
     @roster.collect do |keys, values|
-      if keys== |level|
+      if keys==level 
         retun values
       end
     end
