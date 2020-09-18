@@ -19,7 +19,7 @@ class School
   def grade(level)
     @roster.collect do |keys, values|
       if keys==level 
-         puts values
+         return values
       end
     end
   end
