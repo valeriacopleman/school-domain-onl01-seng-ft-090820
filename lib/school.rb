@@ -14,7 +14,7 @@ class School
     if @roster[level]
       @roster[level] << student
     else
-      @roster[level] => []
+      @roster[level] = []
       @roster[level] << student 
   end
   end
